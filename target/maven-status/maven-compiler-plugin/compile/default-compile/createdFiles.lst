@@ -1,0 +1,8 @@
+com\mobiquity\test\PackerTest.class
+com\mobiquity\packer\Package.class
+com\mobiquity\packer\PackerMain.class
+com\mobiquity\packer\Utils.class
+com\mobiquity\packer\Item.class
+com\mobiquity\packer\Packer.class
+com\mobiquity\exception\APIException.class
+com\mobiquity\packer\Loader.class
