@@ -1,6 +1,6 @@
 
-#Assignment: Package Challenge
-
+Assignment: Package Challenge
+-
 Introduction
 
 You want to send your friend a package with different things.
