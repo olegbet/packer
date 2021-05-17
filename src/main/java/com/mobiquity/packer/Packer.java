@@ -16,6 +16,7 @@ import com.mobiquity.exception.APIException;
 
 public class Packer {
 
+  //Method to define package content
   private static String processPackage(Double weight, List<Item> items) {
 	  String result = "";
 	  
