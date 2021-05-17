@@ -28,10 +28,11 @@ is its weight and the 3rd is its cost. E.g.
 56 : (1,90.72,€13) (2,33.80,€40) (3,43.15,€10) (4,37.97,€16) (5,46.81,€36)
 (6,48.77,€79) (7,81.80,€45) (8,19.36,€79) (9,6.76,€64)
 
-Output sample
 
+Output sample
 For each set of items that you put into a package provide a new row in the output string (items’ index
 numbers are separated by comma). E.g.
+
 4
 -
 2,7
