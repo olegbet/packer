@@ -1,10 +1,13 @@
 package com.mobiquity.packer;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -12,13 +15,18 @@ import java.util.regex.Pattern;
 
 import com.mobiquity.exception.APIException;
 
+import java.nio.charset.*;
+
 public class Loader {
 	
 	//Parsing input file here:
 	public List<Package> load(String fileName) throws APIException, IOException {
 		 String line = "";
 		 String res = "";
-	     BufferedReader reader = new BufferedReader(new FileReader(fileName));
+		 
+		 InputStream fis = new FileInputStream(fileName);
+		 InputStreamReader isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
+		 BufferedReader reader = new BufferedReader(isr);
 
 	     Pattern p = Pattern.compile(Utils.PATTERN);
 	     
