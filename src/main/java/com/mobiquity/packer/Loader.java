@@ -21,16 +21,17 @@ public class Loader {
 	
 	//Parsing input file here:
 	public List<Package> load(String fileName) throws APIException, IOException {
-		 String line = "";
-		 String res = "";
+		
+		String line = "";
+		String res = "";
 		 
 		 InputStream fis = new FileInputStream(fileName);
 		 InputStreamReader isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
 		 BufferedReader reader = new BufferedReader(isr);
 
-	     Pattern p = Pattern.compile(Utils.PATTERN);
+		 Pattern p = Pattern.compile(Utils.PATTERN);
 	     
-	     List<Package> packages = new ArrayList();
+		 List<Package> packages = new ArrayList();
 	     
 	     while ((line = reader.readLine()) != null) { 
 	    	 
